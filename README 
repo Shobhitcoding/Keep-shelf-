@@ -1,0 +1,110 @@
+# 📚 Keep-shelf
+
+> **Keep-shelf** is a light, user-friendly digital bookshelf and personal collection management application. It helps users organize, track, and manage their physical or digital book collections, reading lists, and notes in one unified place.
+
+---
+
+## 📌 1. Project Overview (What Was Built)
+
+**Keep-shelf** solves the problem of cluttered reading lists and unorganized personal book collections. It gives users a clean interface to organize their personal library like a physical shelf.
+
+### Key Features:
+* **Digital Shelf Management:** Add, categorize, and group books into custom shelves (e.g., *Currently Reading*, *Want to Read*, *Completed*).
+* **Metadata & Cover Tracking:** Store book details such as title, author, release year, tags, and custom notes or ratings.
+* **Search & Filter:** Quickly locate books across shelves using keywords, tags, or categories.
+* **Clean & Intuitive UI:** Responsive layout designed for both desktop and mobile viewing.
+
+---
+
+## 🚀 2. Current Stage Reached
+
+* **Stage:** **MVP (Minimum Viable Product)** / **Core Functionality Complete**
+* **Status:**
+  - [x] Basic CRUD operations (Create, Read, Update, Delete books & shelves).
+  - [x] Responsive user interface and basic filter/search functionality.
+  - [x] Persistent local data storage / database connectivity.
+  - [ ] *(In Progress / Planned)* User authentication and multi-device cloud synchronization.
+
+---
+
+## 🛠️ 3. Tech Stack
+
+| Domain | Technology / Tool |
+| :--- | :--- |
+| **Frontend** | HTML5, CSS3, JavaScript (ES6+) / React (or Framework of choice) |
+| **Backend** | Node.js / Express (or lightweight local server API) |
+| **Database / Persistence** | LocalStorage / MongoDB / SQLite |
+| **Version Control** | Git & GitHub |
+
+---
+
+## ⚙️ 4. How to Run
+
+Follow these simple steps to run the project locally on your machine:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) (v16 or higher) and [Git](https://git-scm.com/) installed on your system.
+
+### Installation Steps
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/Shobhitcoding/Keep-shelf-.git](https://github.com/Shobhitcoding/Keep-shelf-.git)
+   cd Keep-shelf-
+
+Install Dependencies:
+
+Bash
+npm install
+Run the Application:
+
+For Development Mode:
+
+Bash
+npm start
+
+
+
+  |        User Interface                             (Web Browser / Front-End Dashboard)            
+                                 |
+                                 | (UserInput / REST API Requests)
+                                 v
+
+             Keep-shelfController                         (Business Logic, Filtering, Route Handlers)         |
+                                 |
+                                 | (Read / Write Operations)
+                                 v
+ 
+        Data Storage Layer                           (Database / Local Storage / MetadataJSON)
+
+6. Important Technical Decisions
+Client-Side Data Persistence (Fast & Offline-First):
+
+Decision: Used local browser storage / lightweight database for initial data persistence.
+
+Reason: Allows the app to work offline instantly without setup friction or expensive cloud server overhead during early testing.
+
+Component-Based Modular Structure:
+
+Decision: Separated UI components (Book Cards, Shelf Lists, Search Bar) into independent modules.
+
+Reason: Keeps code clean, readable, and easy to scale when adding new features later.
+
+Simple, Minimalist UI Design:
+
+Decision: Focused on raw utility and clean spacing over complex, heavy graphic frameworks.
+
+Reason: Ensures fast page loads and seamless navigation across desktop and mobile devices.
+
+⚠️ 7. Known Issues & Future Plans
+Known Issues
+No Authentication Yet: Currently, data is tied to the local session/device; user accounts are not yet enabled.
+
+Manual Metadata Input: Automatic cover image and metadata fetching via open APIs (e.g., Google Books API) is currently basic and may require manual entry for lesser-known books.
+
+Future Roadmap
+[ ] Add Google Books API integration for instant ISBN scanning and metadata fetching.
+
+[ ] Implement User Login/Signup for cloud backups.
+
+[ ] Export & Import feature (CSV/JSON) for user library data.        
