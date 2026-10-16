@@ -1,0 +1,6 @@
+{
+  "name": "KeepShelf",
+  "description": "A reliable, single-device local inbox to capture, tag, search, and organize notes, links, and images with full offline persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
